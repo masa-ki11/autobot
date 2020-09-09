@@ -29,4 +29,4 @@ job_type :rake, "export PATH=\"$HOME/.rbenv/bin:$PATH\"; eval \"$(rbenv init -)\
 
 every 3.minutes do # タスクを処理するペースを記載する。（例は毎朝7時に実行）
   rake 'push:push_line_message'
-end
+end 
