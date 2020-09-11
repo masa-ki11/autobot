@@ -27,6 +27,6 @@ set :output, "#{Rails.root}/log/cron.log"
 set :job_template, "/bin/zsh -l -c ':job'"
 job_type :rake, "export PATH=\"$HOME/.rbenv/bin:$PATH\"; eval \"$(rbenv init -)\"; cd :path && RAILS_ENV=:environment bundle exec rake :task :output"
 
-every 3.minutes do # タスクを処理するペースを記載する。（例は毎朝7時に実行）
+every '0 18 * * 1-5' do 
   rake 'push:push_line_message'
 end 
