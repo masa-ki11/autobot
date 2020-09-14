@@ -22,6 +22,20 @@
 列 1 = 月 2 = 火 3 = 水 4 = 木 5 = 金<br>
 金曜日には週の合計、1日の平均も算出、送信される。
 
+## 工夫したポイント
+
+- 1週間の平均を出すために曜日毎に列を決め、offset:で列指定。
+- 金曜には合計、平均を出すようにした。
+
+## 使用技術(開発環境)
+
+- ruby/Ruby on Rails/Github/Visual Studio Code
+
+## 課題や今後実装したい機能
+
+- 1月の合計、平均。
+- 1日の合計を別ファイルに書き込み
+
 ## DEMO
 
 <img src="https://user-images.githubusercontent.com/67939220/93079308-e1c59000-f6c6-11ea-80dd-3143081a1450.gif" width = "250px" height ="500px">
