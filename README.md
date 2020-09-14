@@ -24,4 +24,4 @@
 
 ## DEMO
 
-![RPReplay_Final1600081216](https://user-images.githubusercontent.com/67939220/93079308-e1c59000-f6c6-11ea-80dd-3143081a1450.gif)
+<img src="https://user-images.githubusercontent.com/67939220/93079308-e1c59000-f6c6-11ea-80dd-3143081a1450.gif" width = "250px" height ="500px">
