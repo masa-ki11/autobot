@@ -32,5 +32,5 @@ every '00 18 * * 1-5'  do
 end 
 
 every '0 0 28-31 * *' do
-  command "/usr/bin/test $(date -d '+1 day' +%d) -eq 1 && cd /Users/mac/projects/autobot && RAILS_ENV=development bundle exec rake month:month_message >> /Users/mac/projects/autobot/log/cron.log 2>&1'"
+  command "/usr/bin/test $(date -d '+1 day' +%d) -eq 1 && cd /Users/mac/projects/autobot && RAILS_ENV=development bundle exec rake month:month_message"
 end
