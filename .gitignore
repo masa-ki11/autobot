@@ -35,3 +35,4 @@ yarn-debug.log*
 .yarn-integrity
 push.rake
 config.json
+end_of_month.rake
