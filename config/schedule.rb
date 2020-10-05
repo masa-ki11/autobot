@@ -32,5 +32,5 @@ every '00 18 * * 1-5'  do
 end 
 
 every '0 0 28-31 * *' do
-  command "/usr/bin/test $(date -d '+1 day' +%d) -eq 1 && cd /Users/mac/projects/autobot && RAILS_ENV=development bundle exec rake month:month_message"
+  command "/usr/bin/test $(date -d '+1 day' +%d) -eq 1 && export PATH=\"$HOME/.rbenv/bin:$PATH\"; eval \"$(rbenv init -)\";cd /Users/mac/projects/autobot && RAILS_ENV=development bundle exec rake month:month_message"
 end
