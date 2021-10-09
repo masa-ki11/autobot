@@ -4,7 +4,7 @@ namespace :test do
   desc "month"
   task message: :environment do 
     session = GoogleDrive::Session.from_config("config.json")
-    sheet = session.spreadsheet_by_key("1dQN10PQpo2EWcXZNEUswEzU89xpfuIKUQopUKAZxsmA").worksheets[0]
+    # ここにpush.rakeの23行目を挿入するとできる
     sum = sheet[1,1]
     average = sum.to_i / 3
       message = {
